@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ARCHIVO 300MS</title>
+<style>
+    body {
+        background-color: black;
+        color: #00ff9f;
+        font-family: monospace;
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .glitch {
+        font-size: 22px;
+        animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+        0% { opacity: 1; }
+        50% { opacity: 0.4; }
+        100% { opacity: 1; }
+    }
+
+    .file {
+        margin-top: 30px;
+        border-left: 2px solid #00ff9f;
+        padding-left: 15px;
+    }
+
+    .hidden {
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+    .pattern {
+        margin-top: 40px;
+        letter-spacing: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="glitch">
+    ARCHIVO 300MS // ACCESO PARCIAL
+</div>
+
+<p>
+El sujeto cree que decide.<br>
+El patrón ya fue integrado.
+</p>
+
+<button onclick="reveal()">ACCEDER</button>
+
+<div id="content" class="hidden">
+
+    <div class="file">
+        <h3>EXPEDIENTE 01 — EXPOSICIÓN</h3>
+        <p>
+        Repetición de estímulos.<br>
+        El sujeto no reconoce la recurrencia.<br>
+        Cree que es coincidencia.
+        </p>
+    </div>
+
+    <div class="file">
+        <h3>EXPEDIENTE 02 — NORMALIZACIÓN</h3>
+        <p>
+        El patrón deja de percibirse.<br>
+        Se integra como pensamiento propio.
+        </p>
+    </div>
+
+    <div class="file">
+        <h3>EXPEDIENTE 03 — RESPUESTA</h3>
+        <p>
+        La decisión ocurre antes de la conciencia.<br>
+        Retraso detectado: 300 ms.
+        </p>
+    </div>
+
+    <div class="file">
+        <h3>EXPEDIENTE 04 — INTEGRACIÓN</h3>
+        <p>
+        El sujeto defiende la decisión.<br>
+        No identifica origen externo.
+        </p>
+    </div>
+
+    <div class="pattern">
+        R3P3T1C10N R3P3T1C10N R3P3T1C10N
+    </div>
+
+    <p style="margin-top:40px;">
+        Si decidiste entrar aquí…<br>
+        no fue la primera vez que viste esto.
+    </p>
+
+</div>
+
+<script>
+function reveal() {
+    document.getElementById("content").classList.add("show");
+}
+</script>
+
+</body>
+</html>
