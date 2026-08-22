@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>MANIFIESTO CHAKRA</title>
+<style>
+    body {
+        background-color: black;
+        color: #00ff9f;
+        font-family: monospace;
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .glitch {
+        font-size: 22px;
+        animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+        0% { opacity: 1; }
+        50% { opacity: 0.4; }
+        100% { opacity: 1; }
+    }
+
+    .file {
+        margin-top: 30px;
+        border-left: 2px solid #00ff9f;
+        padding-left: 15px;
+    }
+
+    .hidden {
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+    .pattern {
+        margin-top: 40px;
+        letter-spacing: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="glitch">
+                              MANIFIESTO CHAKRA // INTRODUCCION A LA SECTA CUÁNTICA 
+</div>
+
+<p>
+No llegaste aquí por accidente.
+Nadie lo hace.
+<br>
+El patrón ya fue integrado.
+</p>
+
+<button onclick="reveal()">ACCEDER</button>
+
+<div id="content" class="hidden">
+
+    <div class="file">
+        <h3>PARTE 01 — TODOS SOMOS RECEPTORES DE "ALGO" </h3>
+        <p>
+        Antes de escuchar esta música, ya estabas escuchando.<br>
+        Antes de entender, ya habías sentido.<br>
+        </p>
+    </div>
+
+    <div class="file">
+        <h3>PARTE 02 — TODOS TENEMOS UN INCONSCIENTE QUE ALMACENA "INFORMACIÓN"</h3>
+        <p>
+        Hay una versión de ti que nunca duerme.<br>
+        Que observa en silencio y
+que reconoce patrones donde tú solo ves ruido.
+ 
+        </p>
+    </div>
+
+    <div class="file">
+        <h3>PARTE 03 — PROPOSITO DE LA CREACION DE MUNDOCHAKRA </h3>
+        <p>
+        La música que oyes no fue creada para gustarte.
+Fue diseñada para encontrarte.
+Para activar memorias que no recuerdas haber vivido. <br>
+        (Retraso detectado: 300 ms).
+        </p>
+    </div>
+
+    <div class="file">
+        <h3>PARTE 04 — INTEGRACIÓN DEL MENSAJE Y PROPÓSITO DE LA SECTA CUÁNTICA..."REDUCIR EL RUIDO MENTAL, PARA ENCONTRAR EL SONIDO PERFECTO"</h3>
+        <p>
+        El primer objetivo es reducir el ruido mental, para posteriormente encontrar el "sonido perfecto".<br>
+        Si este mensaje te incomoda, es porque algo en ti está respondiendo.
+Si lo entiendes, es porque ya empezaste a recordar el futuro.
+        </p>
+    </div>
+
+    <div class="pattern">
+        R3P3T1C10N R3P3T1C10N R3P3T1C10N
+    </div>
+
+    <p style="margin-top:40px;">
+        Si decidiste entrar aquí…<br>
+        no fue la primera vez que viste esto.
+    </p>
+
+</div>
+
+<script>
+function reveal() {
+    document.getElementById("content").classList.add("show");
+}
+</script>
+
+</body>
+</html>
